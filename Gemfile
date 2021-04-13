@@ -8,5 +8,6 @@ gem 'rspec'
 gem 'sinatra'
 gem 'sinatra-contrib'
 gem 'webrick'
+gem 'capybara'
 gem 'simplecov', require: false, group: :test
 gem 'simplecov-console', require: false, group: :test
