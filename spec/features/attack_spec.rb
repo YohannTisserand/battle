@@ -4,4 +4,12 @@ feature 'attack' do
     click_link 'Attack'
     expect(page).to have_content 'Yohann attacked Abdur'
   end
+
+  scenario 'reduce Players 2 Hp by 10' do
+    sign_in_and_play
+    click_link 'Attack'
+    click_link 'OK'
+    expect(page).not_to have_content 'Abdur: 60HP'
+    expect(page).to have_content 'Abdur: 50HP'
+  end
 end
